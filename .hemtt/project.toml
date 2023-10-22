@@ -1,0 +1,16 @@
+name = "ILBE Pack for ACRE2"
+mainprefix = "y"
+prefix = "tfw_radios_acre"
+author = "Bagigi Team"
+
+[files]
+include = [
+	"mod.cpp",
+	"meta.cpp",
+	"README.md",
+	"LICENSE",
+	"ilbe.paa",
+]
+
+[version]
+git_hash = 0
