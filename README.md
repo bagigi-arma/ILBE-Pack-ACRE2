@@ -1,4 +1,4 @@
-This mod combines: 
+This mod combines:
 Bacon's retexture mod for Ilbe (TFR): https://steamcommunity.com/sharedfiles/filedetails/?id=1798485646&searchtext=Ilbe
 MrSocomDude's version of Ilbe (ACRE): https://steamcommunity.com/sharedfiles/filedetails/?id=1343415081&searchtext=Ilbe
 

@@ -7,11 +7,11 @@
 //#define ENABLE_PERFORMANCE_COUNTERS
 
 #ifdef DEBUG_ENABLED_ilbe
-    #define DEBUG_MODE_FULL
+	#define DEBUG_MODE_FULL
 #endif
 
 #ifdef DEBUG_SETTINGS_ilbe
-    #define DEBUG_SETTINGS DEBUG_SETTINGS_TRIPOD
+	#define DEBUG_SETTINGS DEBUG_SETTINGS_TRIPOD
 #endif
 
 #include "\z\ace\addons\main\script_macros.hpp"
