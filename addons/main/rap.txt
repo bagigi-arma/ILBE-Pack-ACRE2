@@ -1,3 +1,0 @@
-prefix=
-product=
-version=e2d58e2a
