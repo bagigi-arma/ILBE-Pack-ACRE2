@@ -1,9 +1,16 @@
-if ((backpack player == _x select 0) then {
-	player forceWalk true;
-	hint "Antenna is extend. You can't run."
-	}
-	else {
-	player forceWalk false;
-	exitWith (_this select 1) call CBA_fnc_removePerFrameHandler;
-	};
-}, 10] call CBA_fnc_addPerframeHandler;
+[
+	{
+		params ["_antennas"];
+		{
+			if (backpack player == (_x select 1)) exitWith {
+				player forceWalk true;
+				hint "Antenna is extended. You can't run.";
+			};
+
+			player forceWalk false;
+			hint "";
+		} forEach _antennas;
+	},
+	5,
+	["assemble_antenna"] call fn_tfw_ilbe_classnames
+] call CBA_fnc_addPerframeHandler;
