@@ -2,6 +2,8 @@ private ["_action_ILBEAP", "_action_assemble_antenna", "_action_disassemble_ante
 
 sleep 5;
 
+tfw_ilbe_antennaExtended = false;
+
 [] execVM "y\tfw_radios_acre\addons\ilbe\scripts\forcewalk.sqf";
 
 _action_assemble_antenna = [

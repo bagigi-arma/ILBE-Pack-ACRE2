@@ -2,13 +2,16 @@
 	{
 		params ["_antennas"];
 		{
-			if (backpack player == (_x select 1)) exitWith {
+			if (!tfw_ilbe_antennaExtended && {backpack player == (_x select 1)}) then {
+				tfw_ilbe_antennaExtended = true;
 				player forceWalk true;
-				hint "Antenna is extended. You can't run.";
+				[["Antenna is extended. You can't run.", 1.2], true] call CBA_fnc_notify;
+			} else {
+				if (tfw_ilbe_antennaExtended) then {
+					player forceWalk false;
+					tfw_ilbe_antennaExtended = false;
+				};
 			};
-
-			player forceWalk false;
-			hint "";
 		} forEach _antennas;
 	},
 	5,
