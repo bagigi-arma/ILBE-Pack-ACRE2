@@ -54,7 +54,7 @@ class CfgPatches {
 			"tfw_whip",
 			"tfw_dd"
 		};
-		requiredVersion = 1;
+		requiredVersion = 2.20;
 		requiredAddons[] = {
 			"cba_main"
 		};
